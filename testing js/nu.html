@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='lampu1.jpg'">ON</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='lampu.jpg'">OFF</button>
+<button onclick="document.getElementById('myImage').src='lamp_animation.gif'">KELAP-KELIP</button>
+<button onclick="document.getElementById('myImage').src='lamp_color_blink.gif'">WARNA WARNI</button>
+
+<hr>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo1">AKU JAWAAAAAAAAA</p>
+<button onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+<button onclick="document.getElementById('demo1').style.display='none'">ILANG</button>
+
+<hr>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo2">JavaScript can hide HTML elements.</p>
+<p id="muncul" style="display: none;">inu jawaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+<button onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+
+<hr>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="demo3" style="display:none">Hello JavaScript!</p>
+<button onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+
+<hr>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo4"></p>
+<script>
+document.getElementById("demo4").innerHTML = "My First JavaScript";
+</script>
+
+
+<script>
+    window.alert(5 + 6);
+    </script>
+
+
+
+
+<style>
+    .popup {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+    }
+    
+    .popup-content {
+      margin: 10% auto;
+      display: block;
+      width: 50%;
+      max-width: 600px;
+    }
+    
+    .close {
+      position: absolute;
+      top: 20px; right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>TEKAN DIBAWAH INI</h2>
+    
+    <!-- Thumbnail gambar -->
+    <img src="button.jpg" onclick="document.getElementById('popup').style.display='block'" style="cursor:pointer; width:80px;">
+    
+    <!-- Popup -->
+    <div id="popup" class="popup" onclick="this.style.display='none'">
+      <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+      <img class="popup-content" src="75fde774a75c0873b88a8936055e592e.jpg">
+      
+    </div>
+
+
+
+
+
+</body>
+</html>
